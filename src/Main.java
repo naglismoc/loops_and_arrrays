@@ -197,5 +197,55 @@ public class Main {
             System.out.println(Dovydas[a]);
         }
 
+    /*
+    Vienoje eilutėje atspausdinkite visus skaičius nuo 1 iki 3000,
+    kurie dalijasi iš 77 be liekanos.
+    Skaičius atskirkite kableliais.
+    Po paskutinio skaičiaus kablelio neturi būti.
+     */
+
+        for (int j = 1; j < 3000; j++) {
+            if(j % 77 == 0) {
+                    System.out.print(j + ",");
+            }
+        }
+        System.out.println();
+
+
+
+        for (int j = 1; j < 3000; j++) {
+            if(j % 77 == 0) {
+                if(3000 / 77 > j / 77 ) {
+                    System.out.print(j + ",");
+                }else {
+                    System.out.println(j);
+                }
+            }
+        }
+        System.out.println();
+        System.out.println();
+
+        System.out.println(3000 / 77);
+
+
+        System.out.println();
+        String num77s = "";
+        for (int j = 1; j < 3000; j++) {
+            if(j % 77 == 0) {
+                    num77s += j + ",";
+            }
+        }
+        System.out.println(num77s.substring(0, num77s.length() - 1));
+
+        System.out.println();
+        num77s = "";
+        for (int j = 77; j < 3000; j += 77) {
+                num77s += j + ",";
+        }
+        System.out.println(num77s.substring(0, num77s.length() - 1));
+
+
+
+
     }
 }
